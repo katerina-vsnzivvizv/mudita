@@ -53,7 +53,10 @@ export default function Footer() {
                         </Flex>
                         <Flex align="center">
                             <Icon as={MdLocationOn} mr={2} color="white" />
-                            <Text color="white">Adres: İstanbul, Türkiye</Text>
+                            <Text color="white">
+                                Adres: Akarca Mah. Kadıtarlası Sok.
+                                <br /> No 11-A Kdz.Ereğli / Zonguldak
+                            </Text>
                         </Flex>
                     </Stack>
                     <Stack gap={2}>

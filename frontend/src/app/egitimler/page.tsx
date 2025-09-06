@@ -11,22 +11,6 @@ type Course = {
     imageUrl: string;
 };
 export default function CoursesPage() {
-    const [courses, setCourses] = useState<Course[]>([]);
-
-    useEffect(() => {
-        async function fetchCourses() {
-            try {
-                const res = await fetch("http://localhost:8081/courses.php");
-                const data = await res.json();
-                setCourses(data);
-            } catch (err) {
-                console.error("Chyba při načítání kurzů:", err);
-            }
-        }
-
-        fetchCourses();
-    }, []);
-
     return (
         <div>
             <Header

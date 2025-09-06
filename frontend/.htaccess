@@ -1,1 +1,11 @@
-php_value allow_url_fopen On
+RewriteEngine On
+RewriteBase /
+
+# Pokud existuje soubor slozka.html, použij ho
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Jinak přesměruj vše na index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]

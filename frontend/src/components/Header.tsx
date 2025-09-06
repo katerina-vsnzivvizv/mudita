@@ -40,26 +40,12 @@ export default function Header({ url, section, text }: HeaderProps) {
                     mb={10}
                 >
                     <Heading fontSize={{ base: '2xl', md: '5xl' }} mb={2} ml={10}>
-                        {section ?? 'Biyoenerji'}
+                        {section ?? 'Bioenerji'}
                     </Heading>
                     <Text mb={5} ml={10}>
                         {text ?? 'Bedeninizi ve zihninizi dengeleyin ve enerjinizi keşfedin'}
                     </Text>
                 </Box>
-
-                <Image
-                    src="/images/mudita.png"
-                    alt="Logo"
-                    position="absolute"
-                    top={0}
-                    left={-2}
-                    height="120px"
-                    width="auto"
-                    zIndex={6}
-                    style={{
-                        filter: "invert(100%) brightness(100%)"
-                    }}
-                />
             </Box>
 
             <Box

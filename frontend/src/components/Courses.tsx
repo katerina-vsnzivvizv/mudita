@@ -25,7 +25,7 @@ export default function Courses() {
     useEffect(() => {
         async function fetchCourses() {
             try {
-                const res = await fetch("http://localhost:8081/backend/courses.php");
+                const res = await fetch("https://muditaakademi.com/php/courses.php");
                 const data: Course[] = await res.json();
                 setCourses(data);
             } catch (err) {

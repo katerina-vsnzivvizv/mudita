@@ -38,7 +38,10 @@ export default function InfoCard({ title, description, imageUrl, info, about, hr
                 />
             </Box>
 
-            <Link href={href}>
+            <Link
+                href={href}
+                _focus={{ boxShadow: "none", outline: "none" }}
+            >
                 <Card.Body gap="2">
                     <Card.Title>{title}</Card.Title>
                     <Card.Description>{description}</Card.Description>

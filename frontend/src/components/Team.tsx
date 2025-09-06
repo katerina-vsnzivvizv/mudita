@@ -30,21 +30,21 @@ export default function Team() {
 
             >
 
-                <InfoCard title='Eda Çetinbaş' description='Kurucu'
-                          imageUrl='/images/about/eda.jpeg' info='Sahibi'
+                <InfoCard title='Eda Çetinbaş' description='Kişisel Gelişim'
+                          imageUrl='/images/about/eda.jpeg' info='Kurucu'
                           about=''
-                          href='hakkimizda/eda-kara'/>
+                          href='hakkimizda/eda-cetinbas'/>
 
                 <InfoCard title='Nüket Kara' description='Bioenerjist / Huana'
-                          imageUrl='/images/about/img.png' info='Hoca'
+                          imageUrl='/images/about/nuket.jpg' info='Hoca'
                           about=''
                           href='hakkimizda/nuket-kara'
                 />
 
-                <InfoCard title='Hicran' description='Manager'
-                          imageUrl='/images/about/img.png' info='Hoca'
+                <InfoCard title='Hicran Kütük' description='Eğitim Danışmanı'
+                          imageUrl='/images/about/hicran.jpeg' info='Danışman'
                           about=''
-                          href='hakkimizda/hicran'
+                          href='hakkimizda/hicran-kutuk'
                 />
 
             </Grid>
