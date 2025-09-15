@@ -11,7 +11,7 @@ export default function Navbar() {
         { name: 'Ana Sayfa', path: '/' },
         { name: 'Eğitimler', path: '/egitimler' },
         { name: 'E-Devlet Onaylı Sertifika', path: '/sertifikalar' },
-        { name: 'Hakkımızda', path: '/hakkimizda' },
+        { name: 'Hakkımızda', path: '/hakkimizda.html' },
         { name: 'Blog', path: '/blog' },
         { name: 'İletişim', path: '/iletisim' },
     ];

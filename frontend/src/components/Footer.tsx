@@ -67,7 +67,7 @@ export default function Footer() {
                     <Link as={NextLink} href="/" color="white" _hover={{ textDecoration: "underline" }}>
                         Ana Sayfa
                     </Link>
-                    <Link as={NextLink} href="/hakkimizda" color="white" _hover={{ textDecoration: "underline" }}>
+                    <Link as={NextLink} href="/hakkimizda.html" color="white" _hover={{ textDecoration: "underline" }}>
                         Biz Kimiz?
                     </Link>
                     <Link as={NextLink} href="/sertifikalar" color="white" _hover={{ textDecoration: "underline" }}>
