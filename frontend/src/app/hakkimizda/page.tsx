@@ -75,13 +75,6 @@ export default function AboutPage() {
             </Flex>
 
             <Team/>
-            <InstagramCarousel
-                posts={[
-                    {src: "/images/main.png", link: "https://instagram.com/p/xxxx"},
-                    {src: "/images/img.png", link: "https://instagram.com/p/yyyy"},
-                    {src: "/images/faq.jpg", link: "https://instagram.com/p/zzzz"},
-                ]}
-            />
 
 
         </div>
