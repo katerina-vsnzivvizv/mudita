@@ -28,7 +28,6 @@ export default function Footer() {
                 justify="space-between"
                 gap={{ base: 10, md: 16 }}
             >
-                {/* 1. sloupec: Kontakty + Sociální sítě */}
                 <Flex
                     direction="column"
                     flex="1"
@@ -59,42 +58,8 @@ export default function Footer() {
                             </Text>
                         </Flex>
                     </Stack>
-                    <Stack gap={2}>
-                        <Text fontWeight="bold" fontSize="lg" color="white">
-                            Bizi Takip Edin
-                        </Text>
-                        <Flex>
-                            <Link
-                                as={NextLink}
-                                href="https://www.facebook.com/nuketce"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                mr={4}
-                            >
-                                <Icon as={FaFacebook} w={6} h={6} color="white" />
-                            </Link>
-                            <Link
-                                as={NextLink}
-                                href="https://www.instagram.com/mudita_akademi/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                mr={4}
-                            >
-                                <Icon as={FaInstagram} w={6} h={6} color="white" />
-                            </Link>
-                            <Link
-                                as={NextLink}
-                                href="https://wa.me/905421079467"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Icon as={FaWhatsapp} w={6} h={6} color="white" />
-                            </Link>
-                        </Flex>
-                    </Stack>
                 </Flex>
 
-                {/* 2. sloupec: Navigace */}
                 <Stack gap={2} flex="1">
                     <Text fontWeight="bold" fontSize="lg" color="white">
                         Navigasyon
@@ -108,44 +73,62 @@ export default function Footer() {
                     <Link as={NextLink} href="/sertifikalar" color="white" _hover={{ textDecoration: "underline" }}>
                         Online Sertifikalar
                     </Link>
-                   {/*<Link as={NextLink} href="/blog" color="white" _hover={{ textDecoration: "underline" }}>*/}
-                   {/*     Blog*/}
-                   {/* </Link>*/}
+                    <Link
+                        as={NextLink}
+                        href="https://www.shopier.com/muditadanismanlik"
+                        color="white"
+                        _hover={{ textDecoration: "underline" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Kurslarımız
+                    </Link>
+                    <Link as={NextLink} href="/blog" color="white" _hover={{ textDecoration: "underline" }}>
+                        Blog
+                    </Link>
                     <Link as={NextLink} href="/iletisim" color="white" _hover={{ textDecoration: "underline" }}>
                         İletişim
                     </Link>
                 </Stack>
 
-                {/* 3. sloupec: Bilgi */}
-                <Stack gap={2} flex="1">
+                <Stack gap={4} flex="1">
                     <Text fontWeight="bold" fontSize="lg" color="white">
-                        Bilgi
+                        Bizi Takip Edin
                     </Text>
-                    <Link as={NextLink} href="/" color="white" _hover={{ textDecoration: "underline" }}>
-                        Ana Sayfa
-                    </Link>
-                    <Link as={NextLink} href="/sertifikalar" color="white" _hover={{ textDecoration: "underline" }}>
-                        Online Sertifikalar
-                    </Link>
-                    <Link as={NextLink} href="/hakkimizda" color="white" _hover={{ textDecoration: "underline" }}>
-                        Biz Kimiz?
-                    </Link>
-                    <Link as={NextLink} href="/banka-hesap-bilgilerimiz" color="white" _hover={{ textDecoration: "underline" }}>
-                        Banka Hesap Bilgilerimiz
-                    </Link>
-                    <Link as={NextLink} href="/yardim-destek" color="white" _hover={{ textDecoration: "underline" }}>
-                        Yardım & Destek
-                    </Link>
-                    <Link as={NextLink} href="/gizlilik-politikasi" color="white" _hover={{ textDecoration: "underline" }}>
-                        Gizlilik Politikası
-                    </Link>
+
+                    {/* Facebook */}
                     <Link
-                        as={NextLink}
-                        href="/geri-odeme-ve-iade-politikasi"
-                        color="white"
-                        _hover={{ textDecoration: "underline" }}
+                        href="https://www.facebook.com/nuketce"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        display="flex"
+                        alignItems="center"
                     >
-                        Geri Ödeme ve İade Politikası
+                        <Icon as={FaFacebook} w={6} h={6} color="white" />
+                        <Text color="white">/nuketce</Text>
+                    </Link>
+
+                    {/* Instagram */}
+                    <Link
+                        href="https://www.instagram.com/mudita_akademi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        display="flex"
+                        alignItems="center"
+                    >
+                        <Icon as={FaInstagram} w={6} h={6} color="white" />
+                        <Text color="white">@mudita_akademi</Text>
+                    </Link>
+
+                    <Link
+                        href="https://wa.me/905421079467?text=Merhaba"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        display="flex"
+                        alignItems="center"
+                    >
+                        <Icon as={FaWhatsapp} w={6} h={6} color="white" />
+                        <Text color="white">+90 542 107 94 67</Text>
                     </Link>
                 </Stack>
             </Flex>

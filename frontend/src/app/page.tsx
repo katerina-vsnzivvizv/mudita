@@ -28,7 +28,6 @@ export default function Home() {
                     <Box textAlign={{ base: "center", md: "left" }}>
                         <Heading
                             fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
-                            maxW={{ base: "90%", md: "600px" }}
                             mb={4}
                             lineHeight="1.2"
                         >

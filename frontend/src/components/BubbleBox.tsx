@@ -9,8 +9,8 @@ type HeaderProps = {
 export default function BubbleBox({heading, text}: HeaderProps) {
 
     return (
-        <Stack m={4}>
-            <Card.Root size="sm" bg="rgba(255, 255, 255, 0.8)" p={10} m={7}>
+        <Stack m={{ base: 0, md: 4 }}>
+            <Card.Root size="sm" bg="rgba(255, 255, 255, 0.8)" p={{ base: 0, md: 10 }} m={7}>
                 <Card.Header>
                     <Heading>{heading}</Heading>
                 </Card.Header>

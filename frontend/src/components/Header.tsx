@@ -22,7 +22,7 @@ export default function Header({ url, section, text }: HeaderProps) {
                 alignItems="end"
                 justifyContent="flex-start"
                 textAlign="left"
-                px={4}
+                px={{ base: 0, md: 4 }}
             >
                 <Box
                     position="absolute"
